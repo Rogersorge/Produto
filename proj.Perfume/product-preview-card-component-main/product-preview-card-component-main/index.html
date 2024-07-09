@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    body {
+    background-color: hsl(30, 38%, 92%); 
+    height: 100vh; 
+    margin: 0; 
+    display: flex;
+    flex-direction: column;   
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      width: 680px;
+      margin: auto;
+      height: 500px;
+    }
+
+    .image img {
+      width: 350px;
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+    }
+
+    .text {
+    background: #fff;
+    width: 340px;
+    border-radius: 0 10px 10px 0;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+    .text h2 {    
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    margin: 0;
+    }
+
+    h1 {
+      font-family: "Fraunces", serif;
+      font-size: 39px;
+      margin: 0;
+      line-height: 39px;
+    }
+
+    #infos {
+      font-family: "Montserrat", sans-serif; 
+      color: hsl(228, 12%, 48%);
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 20px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .price {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    #new {
+      font-family: "Fraunces", serif;
+      color: hsl(158, 36%, 37%);
+      font-size: 39px;
+      font-weight: 700;
+      margin: 0;
+    } 
+
+    #old {
+      font-family: "Montserrat", sans-serif;
+      text-decoration: line-through;
+      color: hsl(228, 12%, 48%);
+      margin: 0;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: hsl(158, 36%, 37%);
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 15px 0;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }  
+    
+    .btn:hover {
+      background-color: hsl(162, 35%, 19%);
+    }
+
+    .attribution {
+       font-size: 11px; 
+       text-align: center; 
+      }
+
+    .attribution a {
+       color: hsl(228, 45%, 44%); 
+      }
+
+  </style>
+</head>
+<body>
+
+  <section class="container">
+
+    <div class="image">
+
+      <img src="images/image-product-desktop.jpg" alt="Image Pruduct">
+
+    </div>
+
+    <div class="text">
+
+      <h2>Perfume</h2>
+
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+
+      <p id="infos">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+
+      <div class="price">
+
+        <p id="new">$149.99</p>
+        <p id="old">$169.99</p>
+
+      </div>
+
+      <a class="btn" href="https://">
+        <img src="images/icon-cart.svg" alt="">
+        <span>Add to Cart</span>
+      </a>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
